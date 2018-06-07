@@ -11,6 +11,6 @@ if [ ! -e $TEXT_DATA ]; then
   if [ ! -e $ZIPPED_TEXT_DATA ]; then
     wget http://mattmahoney.net/dc/text8.zip -O $ZIPPED_TEXT_DATA
 	fi
-	gzip -d $ZIPPED_TEXT_DATA -f
+	unzip $ZIPPED_TEXT_DATA
 	mv text8 $TEXT_DATA
 fi
